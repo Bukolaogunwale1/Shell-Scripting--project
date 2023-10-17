@@ -34,6 +34,8 @@ To create a default shell script
   
  ` touch myscript.sh`
 
+ ![image](https://github.com/Bukolaogunwale1/Shell-Scripting--project/assets/122865359/1d4fabfb-5eaa-4696-880a-b4ee53e10800)
+
  
  o To proceed with the script we start with a declaration#! /bin/bash
 
@@ -54,7 +56,9 @@ Control Flow statement
 Using `if-else` to execute script based on Condition
 
 Run
-hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+
+```
+
 `#!/bin/bash`
 
 # Example script to check if a number is positive, negative, or zero
@@ -68,7 +72,8 @@ elif [ $num -lt 0 ]; then
 else
    echo "The number is zero."
 fi
-hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+
+``` 
 
 <img width="958" alt="to check if no is positive or negative" src="https://github.com/Bukolaogunwale1/Shell-Scripting--project/assets/122865359/91a6ff93-29be-4a83-8af4-844d50a500fa">
 
@@ -78,14 +83,16 @@ To list all the number from 1-5
 
 Run
 
-hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+```
+
 # Example script to print numbers from 1 to 5 using a for loop
 
 for (( i=1; i<=5; i++ ))
 do
     echo $i
 done 
-hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+
+```
 
 ![image](https://github.com/Bukolaogunwale1/Shell-Scripting--project/assets/122865359/869023a7-d42a-4529-9f05-261ae37a7092)
 
@@ -93,7 +100,7 @@ hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
 - To print current date using the backtick .
   Run
 
-  HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+  ```
   
   # Using backtick for command line subtitution 
 
@@ -101,7 +108,7 @@ hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
 
   echo $current_date
 
-  hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+  ```
   
 <img width="872" alt="using back tick for command substituition" src="https://github.com/Bukolaogunwale1/Shell-Scripting--project/assets/122865359/dcde2d20-d545-4905-8fe0-07857e34f954">
 
@@ -109,7 +116,7 @@ hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
 
 Run
 
-hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+```
 #! /bin/bash
 
 # Syntax for command substuition 
@@ -117,7 +124,7 @@ hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
 current_date=$(date +%Y-%m-%d)
 echo $current_date
 
-HHHHHhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+```
 
 <img width="960" alt="syntax for command substitution" src="https://github.com/Bukolaogunwale1/Shell-Scripting--project/assets/122865359/f32e8d65-e283-414b-93a2-f5cb585e8346">
 
@@ -135,11 +142,12 @@ HHHHHhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
 
   Run
 
-  hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+```
+  
   echo "Enter your name:"
 read name
 
-hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+```
 
 <img width="920" alt="output text to tye terminal" src="https://github.com/Bukolaogunwale1/Shell-Scripting--project/assets/122865359/8a3fbcc6-767c-46c3-b22b-27e72e268494">
 
@@ -147,8 +155,8 @@ hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
 - To output Text to Terminal e.g
 
 Run `echo my name is bukola` 
-hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
-(correct it next pic)
+
+
 <img width="920" alt="output text to tye terminal" src="https://github.com/Bukolaogunwale1/Shell-Scripting--project/assets/122865359/b58ac934-0a96-4aac-b037-5b4462270a1b">
 
 - To output the result of a command line into a file
@@ -156,7 +164,6 @@ hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
 - Run `echo "Hello world" index.txt`
 
 ![image](https://github.com/Bukolaogunwale1/Shell-Scripting--project/assets/122865359/a8e31aff-59ea-4e84-8848-4577a5014c6f)
-
 
 - pass the content of a file as input to a command
 
@@ -174,8 +181,7 @@ Bash allows you to define and use functions to group related commands together.f
 
 -Run
 
-hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
-
+```
 
 # Define a function to greet the user
 greet() {
@@ -185,7 +191,7 @@ greet() {
 # Call the greet function and pass the name as an argument
 greet "John"
 
-hhhhhhhhhhhhhhhhhhhhhh
+```
 
 <img width="876" alt="call the greet function and pas sthe name as an argument" src="https://github.com/Bukolaogunwale1/Shell-Scripting--project/assets/122865359/e7ab307b-4048-433c-a77f-26910b16ccd2">
 
@@ -197,14 +203,13 @@ Run `mkdir shell-scripting`
 
 Run `touch user-input.sh`
 
-
 <img width="953" alt="mkdir real" src="https://github.com/Bukolaogunwale1/Shell-Scripting--project/assets/122865359/a4635385-baee-4362-bd80-bb13e3a93732">
 
 - Open user-input.sh file with a code editor and paste the following code and save
 
 paste
 
-hhhhhhhhhhhhhhhhh
+```
 
 # Prompt the user for their name
 echo "Enter your name:"
@@ -213,10 +218,11 @@ read name
 # Display a greeting with the entered name
 echo "Hello, $name! Nice to meet you."
 
+```
+
 -change the file permission to an executable file
 
 Run `chmod +x user-input.sh`
-
 
 ![image](https://github.com/Bukolaogunwale1/Shell-Scripting--project/assets/122865359/7ad02831-202c-44e0-bf27-3d66a2d64ae1)
 
@@ -236,7 +242,8 @@ Run `touch navigating-linux-filesystem.sh`
 
 - Open file with code editor paste the following code and save
 
-hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh  
+```
+ 
 # Display current directory
 echo "Current directory: $PWD"
 
@@ -274,10 +281,9 @@ echo "Directory removed."
 echo "Files in the current directory:"
 ls
 
-hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+```
 
 ![image](https://github.com/Bukolaogunwale1/Shell-Scripting--project/assets/122865359/12159c10-e23f-4273-947b-2761a9aa6a92)
-
 
 - Run chmod +x navigating-linux-filesystem.sh to make the file executable
 
@@ -287,6 +293,7 @@ hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
 ![image](https://github.com/Bukolaogunwale1/Shell-Scripting--project/assets/122865359/12159c10-e23f-4273-947b-2761a9aa6a92)
 
 ![image](https://github.com/Bukolaogunwale1/Shell-Scripting--project/assets/122865359/83fce706-8ee9-4362-b2f4-513cc42e28ae)
+
 ![image](https://github.com/Bukolaogunwale1/Shell-Scripting--project/assets/122865359/2b27dae4-e425-44e2-acfb-02cd5b8c7613)
 
 
@@ -307,6 +314,8 @@ To write a script that defines two variables num1 and num2, with numeric values,
 
 Create a file called calculation.sh using `touch calculation.sh`
 - Open the calculations.sh file using a code editor, paste the following code and
+  
+```
 
 # Define two variables with numeric values
 num1=10
@@ -336,6 +345,8 @@ square_root=$(awk "BEGIN{ sqrt=$num2; print sqrt }")
 echo "Number 1 raised to the power of 2: $power_of_2"
 echo "Square root of number 2: $square_root"
 
+```
+
 ![image](https://github.com/Bukolaogunwale1/Shell-Scripting--project/assets/122865359/379fe62f-80b6-447d-97b2-7f90df0da2a1)
 
 - To make the calculations.sh file executable  `Run chmod +x calculations.sh`
@@ -349,7 +360,8 @@ This script defines source directory and backup directory paths. it then create 
 - To create a file called backup.sh run `touch backup.sh`  Then
 - Open the backup.sh file with a code editor, paste the code below and save
 
-hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+```
+
 # Define the source directory and backup directory
 source_dir="/c/Users/HP/Documents"
 backup_dir="$Home/path/to/backup_directory"
@@ -369,7 +381,8 @@ cp -r "$source_dir"/* "$backup_dir_with_timestamp"
 # Display a message indicating the backup process is complete
 echo "Backup completed. Files copied to: $backup_dir_with_timestamp"
 
-hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh 
+```
+
 <img width="739" alt="newww" src="https://github.com/Bukolaogunwale1/Shell-Scripting--project/assets/122865359/84def848-06c9-493c-8590-33bd117f9387">
 
 -To make the backup.sh file executable, `run chmod +x backup.sh`
